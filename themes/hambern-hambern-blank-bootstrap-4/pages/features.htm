@@ -1,0 +1,24 @@
+title = "features"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[simpleContact]
+nameTitle = "Full Name"
+emailTitle = "Email"
+phoneTitle = "Phone"
+subjectTitle = "Subject"
+messageTitle = "Message"
+buttonText = "Submit"
+displayPhone = 1
+==
+{% put jumbotron %}
+  <h1 class="display-3">Vaersaga.com</h1>
+  <p class="lead">This is webpage is under construction, come back later!</p>
+{% endput %}
+
+<h1 class="display-4 wow animated zoomInDown m-t-3">Contact me for more information!</h1>
+
+<dl class="row m-t-3 wow animated zoomInUp" data-wow-delay=".1s">
+  {% component 'simpleContact' %}
+</dl>
